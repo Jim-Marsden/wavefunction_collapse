@@ -13,7 +13,7 @@ FetchContent_Declare(fmt
 FetchContent_MakeAvailable(fmt)
 
 
-add_executable(wavefunction_collapse src/main.cpp)
+add_executable(wavefunction_collapse src/main.cpp src/tile.hpp)
 target_link_libraries(wavefunction_collapse PRIVATE sfml-graphics fmt)
 target_compile_features(wavefunction_collapse PRIVATE cxx_std_23)
 if (WIN32 AND BUILD_SHARED_LIBS)
